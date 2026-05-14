@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-brand-900 font-sans;
+  }
+
+  ::selection {
+    @apply bg-accent-blue/10 text-accent-blue;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply text-[11px] font-semibold tracking-[3px] uppercase text-brand-500;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-brand-900 leading-[1.1];
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight text-brand-900;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl font-medium text-brand-900;
+  }
+
+  .body-lg {
+    @apply text-lg text-brand-600 leading-relaxed;
+  }
+
+  .card {
+    @apply bg-white border border-brand-200 rounded-xl p-6 transition-shadow hover:shadow-[0_4px_24px_rgba(0,0,0,0.04)];
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium border;
+  }
+}
