@@ -31,7 +31,16 @@
   },
   "overrides": {
     "postcss": "^8.5.10",
+  "react": "$react",
+  "react-dom": "$react-dom",
+  "three-mesh-bvh": "^0.9.10",
+  "@react-three/fiber": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
+  "@react-three/drei": {
     "react": "$react",
     "react-dom": "$react-dom"
   }
+}
 }
